@@ -20,9 +20,9 @@ const logout = () => {
 						</div>
 					</div>
 					<div v-else class="avatar avatar-placeholder">
-						<div class="bg-neutral text-neutral-content w-8 rounded-full flex items-center justify-center">
+						<div class="flex items-center justify-center w-8 bg-gray-200 rounded-full text-xs text-gray-500">
 							<span>
-								{{ (data?.user?.name || 'S Y').split(' ').map(n => n[0]).join('').toUpperCase() }}
+								{{ (data?.user?.name || 'S Y').split(' ').slice(0, 2).map(n => n[0]).join('').toUpperCase() }}
 							</span>
 						</div>
 					</div>

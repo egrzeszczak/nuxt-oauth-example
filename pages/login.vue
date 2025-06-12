@@ -1,11 +1,11 @@
 <template>
   <div class="">
-    <div class="card w-96 bg-base-100 card-md shadow-sm">
+    <div class="card w-96 bg-base-100 card-md border border-gray-200 shadow-md">
       <div class="card-body">
         <h2 class="card-title justify-center">Login options</h2>
-        <p>Please select your identity provider</p>
+        <p class="p-2">Please select your identity provider</p>
         <div class="justify-center card-actions">
-          <button class="btn btn-wide btn-primary flex items-center gap-2" @click="loginWithMicrosoft">
+          <button class="btn w-full flex items-center gap-2" @click="loginWithMicrosoft">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5">
               <rect fill="#F35325" x="2" y="2" width="13" height="13" />
               <rect fill="#81BC06" x="17" y="2" width="13" height="13" />
