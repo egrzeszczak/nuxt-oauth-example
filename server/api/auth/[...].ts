@@ -8,7 +8,7 @@ export default NuxtAuthHandler({
             clientId: process.env.AZURE_AD_CLIENT_ID as string,
             clientSecret: process.env.AZURE_AD_CLIENT_SECRET as string,
             tenantId: process.env.AZURE_AD_TENANT_ID as string,
-            authorization: { params: { scope: "openid profile email User.Read.All" } }
+            authorization: { params: { scope: "openid profile email User.Read" } }
         })
     ],
     pages: {
